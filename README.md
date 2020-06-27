@@ -1,16 +1,17 @@
 # Ejercicios_Android
-Ejercicios en Android estudio 5,7,11,33,38
+Ejercicios prpuestos en Android Studio  5, 7, 11, 33, 38.
+Los ejercicios se encuentran uno en cada rama creada a excepción del ejercicio 5 que  se encuentra en la rama Master
 
-Ejercicio 5: Control de  Ckeckbox
-Problema: Realizar la carga de controles tipo EditText("Number") y disponer de dos CheckBox para solicitar si queremos sumar y/o restar dichos valores los cuales mostraran
-su resultado de la operacion resectiva  mediante un control de tipo Button. 
+Ejercicio 5 : Control CheckBox
+Este ejercicio realizara la carga de dos números  en controles tipo EditText y con dos controles de tipo
+CheckBox me permita seleccionar la operación a realizar, sea esta suma, resta o las dos;
+finalmente con un control tipo Button efectúa la operación y muestra el resultado de la misma.
 
  ![myimage-alt-tag](https://github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.jpg) 
  
  
  
- 
-Ejercicio 7: 
+
 
 
 
