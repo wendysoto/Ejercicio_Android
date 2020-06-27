@@ -7,7 +7,7 @@ Este ejercicio realizara la carga de dos números  en controles tipo EditText y 
 CheckBox me permita seleccionar la operación a realizar, sea esta suma, resta o las dos;
 finalmente con un control tipo Button efectúa la operación y muestra el resultado de la misma.
 
- ![myimage-alt-tag](https://github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.jpg) 
+ ![myimage-alt-tag](https://github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.1.jpeg) 
  
  
  
