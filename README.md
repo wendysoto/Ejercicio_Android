@@ -5,5 +5,7 @@ Ejercicio 5: Control de  Ckeckbox
 Problema: Realizar la carga de controles tipo EditText("Number") y disponer de dos CheckBox para solicitar si queremos sumar y/o restar dichos valores los cuales mostraran
 su resultado de la operacion resectiva  mediante un control de tipo Button. 
 Ejercicio 7: 
+ ![alt text](https://raw.github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.jpg) 
 
-https://raw.github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.jpg
+
+
