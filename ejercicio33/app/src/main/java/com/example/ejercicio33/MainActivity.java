@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Paint.Style;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    class Lienzo extends View {
+
+     class Lienzo extends View {
         public Lienzo(Context context) {
             super(context);
         }
@@ -47,9 +50,10 @@ public class MainActivity extends AppCompatActivity {
             pincell.setARGB(255, 255, 0, 0);
             pincell.setStyle(Paint.Style.STROKE);
             for (int f = 0; f < 10; f++) {
-                canvas.drawCircle(ancho/2, alto/2, f * 15, pincell);
+                canvas.drawCircle(ancho / 2, alto / 2, f * 15, pincell);
             }
         }
 
     }
 }
+
