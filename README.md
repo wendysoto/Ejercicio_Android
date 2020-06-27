@@ -1,4 +1,4 @@
-# Ejercicio_Android
+# Ejercicios_Android
 Ejercicios en Android estudio 5,7,11,33,38
 
 Ejercicio 5: Control de  Ckeckbox
