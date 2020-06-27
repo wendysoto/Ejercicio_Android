@@ -6,8 +6,7 @@ Problema: Realizar la carga de controles tipo EditText("Number") y disponer de d
 su resultado de la operacion resectiva  mediante un control de tipo Button. 
 Ejercicio 7: 
  ![myimage-alt-tag](https://github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.jpg) 
-https://raw.github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.jpg
- ![alt text](https://raw.github.com/wendysoto/Ejercicios_Android/blob/master/capturas/5.jpg) 
+
 
 
 
