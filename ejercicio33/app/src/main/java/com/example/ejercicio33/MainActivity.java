@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.os.Bundle;
@@ -18,42 +19,38 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        /*setContentView(R.layout.activity_main);
         RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
-        Lienzo fondo = new Lienzo(this);
-        layout1.addView(fondo);
-    }
+        Canvas fondo = new Canvas(this);
+        layout1.addView(fondo);*/
+        RelativeLayout layout1 = (RelativeLayout) findViewById(R.id.layout1);
+        DimensionesView dimensiones=new DimensionesView(this);
+        setContentView(dimensiones);
 
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
     }
-
-    public boolean onOptionItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-     class Lienzo extends View {
-        public Lienzo(Context context) {
+    class DimensionesView  extends View{
+        public DimensionesView (Context context){
             super(context);
         }
+        protected void onDraw (Canvas canvas){
+            super.onDraw(canvas);
+            int ancho =getWidth();
+            int alto=getHeight();
 
-        protected void onDraw(Canvas canvas) {
-            canvas.drawRGB(255, 255, 255);
-            int ancho = canvas.getWidth();
-            int alto = canvas.getHeight();
-            Paint pincell = new Paint();
-            pincell.setARGB(255, 255, 0, 0);
-            pincell.setStyle(Paint.Style.STROKE);
+            canvas.drawColor(Color.GRAY);
+
+            Paint paint =new Paint();
+            paint.setAntiAlias(true);
+            paint.setStyle(Style.STROKE);
+
+            paint.setColor(Color.WHITE);
             for (int f = 0; f < 10; f++) {
-                canvas.drawCircle(ancho / 2, alto / 2, f * 15, pincell);
+                canvas.drawCircle(ancho / 2, alto / 2, f * 15, paint);
             }
-        }
 
+        }
     }
+
 }
 
