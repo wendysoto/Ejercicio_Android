@@ -1,5 +1,5 @@
 # Ejercicios_Android
-Ejercicios prpuestos en Android Studio  5, 7, 11, 33, 38.
+Ejercicios propuestos en Android Studio  5, 7, 11, 33, 38.
 Los ejercicios se encuentran uno en cada rama creada a excepción del ejercicio 5 que  se encuentra en la rama Master
 
 # Ejercicio 5 : Control CheckBox
