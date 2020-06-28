@@ -6,6 +6,9 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +19,35 @@ import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+       super.onCreate(savedInstanceState);
+        pantallaImagenView layout =new pantallaImagenView(this);
+        setContentView(layout);
+
+    }
+
+    public class pantallaImagenView extends View{
+        Drawable imagen;
+        public pantallaImagenView(Context context){
+            super(context);
+            imagen=context.getResources().getDrawable(R.drawable.img1);
+        }
+        protected void onDraw (Canvas canvas){
+            canvas.drawRGB(57,97,157);
+            Paint paint=new Paint();
+            paint.setAntiAlias(true);
+            int ancho=canvas.getWidth();
+            int alto=canvas.getHeight();
+            Bitmap bmp= BitmapFactory.decodeResource(getResources(),
+                    R.drawable.img1);
+            canvas.drawBitmap(bmp, (ancho-250)/3, (alto-200)/3,null);
+        }
+
+
+    }
+
+    /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -55,5 +87,5 @@ public class MainActivity extends AppCompatActivity {
             canvas.drawBitmap(bmp, (ancho-250)/2, (alto-200)/2,null);
 
         }
-    }
+    }*/
 }
